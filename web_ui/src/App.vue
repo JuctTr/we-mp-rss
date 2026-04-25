@@ -133,7 +133,7 @@
         </a-space>
       </div>
       <div class="header-right" v-if="hasLogined">
-        <a-link href="/views/home" target="_blank" style="margin-right: 20px;">Views</a-link>
+        <!-- <a-link href="/views/home" target="_blank" style="margin-right: 20px;">Views</a-link>
         <a-link href="/api/docs" target="_blank" style="margin-right: 20px;">Docs</a-link>
         <a-link href="https://gitee.com/rachel_os/we-mp-rss" target="_blank" style="margin-right: 20px;">Gitee</a-link>
         <a-link href="https://github.com/rachelos/we-mp-rss" target="_blank" style="margin-right: 20px;">GitHub</a-link>
@@ -150,7 +150,7 @@
           <a-link @click="showSponsorModal" style="margin-right: 20px; cursor: pointer;" type="text">支持</a-link>
         </a-tooltip>
         <a-link href="https://www.paypal.com/ncp/payment/PUA72WYLAV5KW" target="_blank"
-          style="margin-right: 20px;">赞助</a-link>
+          style="margin-right: 20px;">赞助</a-link> -->
 
 
 
@@ -223,14 +223,14 @@
           </div>
         </a-modal>
         <WechatAuthQrcode ref="qrcodeRef" @success="handleQrAuthSuccess" />
-        <a-modal v-model:visible="sponsorVisible" title="感谢支持" :footer="false" :style="{ zIndex: 1000 }" unmount-on-close>
+        <!-- <a-modal v-model:visible="sponsorVisible" title="感谢支持" :footer="false" :style="{ zIndex: 1000 }" unmount-on-close>
           <div style="text-align: center;">
             <p>如果您觉得这个项目对您有帮助,请给Rachel来一杯Coffee吧~ </p>
             <img src="@/assets/images/sponsor.jpg" alt="赞赏码" style="max-width: 300px; margin-top: 20px;">
             <p>您打赏的金额将用于维护项目的运行成本，感谢您的支持！</p>
             <p>打赏后可以发送单号到<a href="mailto:rachelos@qq.com">rachelos@qq.com</a></p>
           </div>
-        </a-modal>
+        </a-modal> -->
       </div>
     </a-layout-header>
 
