@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master  # 请根据你的实际主分支名称调整（如 main）
+    paths:  # 仅在指定文件变化时触发（可选）
+      - 'core/ver.py'
   workflow_dispatch:  # 保留手动触发按钮，方便排错和补发
 
 env:
@@ -12,6 +14,9 @@ env:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     
     steps:
       - name: Checkout repository
