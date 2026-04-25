@@ -4,7 +4,7 @@ permissions:
 on:
   push:
     branches:
-      - main
+      - master
     paths:  # 仅在指定文件变化时触发（可选）
       - '*.md'
   workflow_dispatch:  # 支持手动触发

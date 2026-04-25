@@ -2,7 +2,7 @@ name: Base OS Full Image
 on:
   push:
     branches:
-      - main
+      - master
     paths:  # 仅在指定文件变化时触发（可选）
       - 'Dockerfiles/base-full/Dockerfile'
   workflow_dispatch:  # 支持手动触发
